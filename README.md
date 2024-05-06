@@ -1,3 +1,17 @@
+<p align="center">
+  <img src="https://github.com/erlink-lib/kuvertapi/assets/59487825/aff05f7f-8dd6-4af5-87b9-228dd1c13c81">
+</p>
+
+<h1 align="center">API Kuvert Kazakhstan</h1>
+
+## Введение
+
+Добро пожаловать в документацию API сайта kuvert.kz. Наш API предоставляет разработчикам инструменты для интеграции и взаимодействия с нашей платформой. Чтобы начать использование API, необходимо иметь аккаунт и быть авторизованным.
+
+## Безопасность и авторизация
+
+Для всех запросов к API требуется использование токена авторизации (TOKEN_API), который вы получите после авторизации и выполнения команды [getToken](#gettoken). Убедитесь, что ваш токен безопасно хранится и не распространяется третьим лицам.
+
 # Содержание
 | Метод                           | Описание                                |
 | ------------------------------- | --------------------------------------- |
@@ -13,7 +27,8 @@
 
 
 
-# getToken
+# ⚡getToken
+
 
 ## Описание:
 
@@ -42,7 +57,9 @@ fetch('https://example.com/path/to/api/?action=getToken', {
 .catch(error => console.error('Error:', error));
 ```
 
-# getCategories
+[⬆️ Вверх](#содержание)
+
+# ⚡getCategories
 
 ## Описание:
 
@@ -109,7 +126,9 @@ fetch('https://example.com/path/to/api/?action=getCategories&id=123', {
 ]
 ```
 
-# getItems
+[⬆️ Вверх](#содержание)
+
+# ⚡getItems
 
 ## Описание
 
@@ -161,3 +180,6 @@ fetch('https://example.com/path/to/api/?action=getItems&id=10&all=true&page_size
   }
 ]
 ```
+
+[⬆️ Вверх](#содержание)
+
